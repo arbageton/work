@@ -20,4 +20,4 @@ listUsers.forEach((str) => {
   })
 });
 
-console.log(base)
+console.log(base) // print
