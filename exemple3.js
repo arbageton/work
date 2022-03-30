@@ -1,9 +1,23 @@
-const text = "privet_kak_dela_4URKI";
+const text = "privet_kak_dela_4URKI"
 
 
 function mySplit(str, separator) {
-  return str;
+  let massive = [];
+  let string = "";
+  for (i = 0; i < str.length; i++) {
+    if (str[i] === separator) {
+      massive.push(string)
+      string = ""
+    } else {
+      string = string + str[i]
+    }
+  }
+  massive.push(string)
+ return massive;
 }
 
+const list = mySplit(text, '__');
+console.log(list)
 
-console.log(mySplit(text, '_'))
+
+// писать_каждое букву в слова
