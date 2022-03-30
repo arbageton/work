@@ -3,8 +3,8 @@ const str = "privet_kak_dela_4URKI";
 
 function mySplit(separator) {
   let tempString = '';
+
   const tempList = [];
-  
   const text = this.toString();
  
   for(var i = 0; i < text.length; i++) {
